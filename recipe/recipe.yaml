@@ -1,5 +1,5 @@
 context:
-  version: 4.44.1
+  version: "4.44.4"
 
 package:
   name: algoliasearch
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/algoliasearch/algoliasearch-${{ version }}.tar.gz
-  sha256: 7542a1c14721fc90ceeb92784219f8b6a5d3faa3f56147c9515ba16957190680
+  sha256: b5bcf1cbfb7172be19f8b71a0e1f2ef482a1da24f08522fb77788d5486c36512
 
 build:
   noarch: python
@@ -29,13 +29,13 @@ requirements:
     - pydantic >=2
 
 tests:
-- python:
-    python_version:
-      - ${{ python_min }}.*
-      - "*"
-    imports:
-    - algoliasearch 
-    pip_check: true
+  - python:
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+      imports:
+        - algoliasearch
+      pip_check: true
 
 about:
   homepage: https://www.algolia.com
