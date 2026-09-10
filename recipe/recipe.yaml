@@ -1,5 +1,5 @@
 context:
-  version: "4.45.0"
+  version: "4.47.0"
 
 package:
   name: algoliasearch
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/algoliasearch/algoliasearch-${{ version }}.tar.gz
-  sha256: 01c70e59b21b1cd3e9e255cca928c7563babde95f71de175fd540ef806847d36
+  sha256: d83a83aa120237236adb1e20746d53bdd96fcde5f6ae4a36542d4f17dced96e9
 
 build:
   noarch: python
